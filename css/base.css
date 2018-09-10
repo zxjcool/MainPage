@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #d4d0c8;
+}
+input,button{
+    padding: 0;
+    border: 0;
+}
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?7kkyc2');
+    src:  url('../fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?7kkyc2') format('truetype'),
+    url('../fonts/icomoon.woff?7kkyc2') format('woff'),
+    url('../fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.header{
+    height: 170px;
+    background-color: #022066;
+}
+.inner{
+    height: 170px;
+    width: 1100px;
+    /*background-color: pink;*/
+    margin: 0 auto;
+    position: relative;
+}
+.in_left{
+    padding-top: 26px;
+    /*height: 100px;*/
+    position: relative;
+}
+.inner span{
+    display: block;
+    width: 120px;
+    height: 120px;
+}
+.in_left p{
+    position: absolute;
+    left:116px;
+    top:47px;
+    font-size: 36px;
+    font-weight: 400;
+    color: #fff;
+
+}
+.in_left i{
+    position:absolute;
+    left: 116px;
+    top: 93px;
+    font-style: normal;
+    color: #fff;
+}
+.in_right{
+    width: 280px;
+    position: absolute;
+    top: 56px;
+    right: 0;
+}
+.top{
+    position: absolute;
+    top:0;
+    right: 0;
+}
+.top li {
+    list-style: none;
+    font-size: 12px;
+    float: left;
+    padding-right: 5px;
+    color: #fff;
+}
+.top li::after{
+    content: "";
+    width: 1px;
+    height: 12px;
+    background-color: #fff;
+    position: absolute;
+    top:3px;
+    left: 52px;
+
+}
+.top a {
+    text-decoration: none;
+    font-size: 12px;
+    padding-right: 5px;
+    color: #fff;
+}
+.search input {
+    width: 220px;
+    height: 36px;
+    border: 1px solid #F10215;
+    padding-left: 5px;
+    outline: none;
+    color: #989898;
+    float: left;
+}
+.search button{
+    width: 50px;
+    height: 38px;
+    background-color: #F10215;
+    float: left;
+    position: relative;
+}
+.search i{
+    font-family: "icomoon";
+    color: #fff;
+    font-style: normal;
+    font-size: 16px;
+}
+.in_right.hot{
+    position: relative;
+}
+.hot ul{
+    position: absolute;
+    top:45px;
+    left: 0;
+}
+.in_right li {
+    list-style: none;
+    font-size: 12px;
+    float: left;
+    padding-right: 5px;
+    color: #fff;
+}
+.in_right a {
+    text-decoration: none;
+    font-size: 12px;
+    padding-right: 5px;
+    color: #fff;
+}
+.w{
+    width: 1100px;
+    margin:0 auto;
+}
+.banner{
+    height: 1000px;
+    background-color: #fff;
+}
+.footer{
+    margin-top: 2px;
+    height: 150px;
+    background-color: #dbdbdb;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+}
+.footer .f_right{
+    width: 300px;
+    height: 150px;
+    background: url("../images/ico_footer.png") no-repeat;
+    position: absolute;
+    top: 0;
+    right: 220px;
+}
+.footer .first{
+    color:#737373;
+    position: absolute;
+    top:60px;
+    left: 197px;
+}
+.footer .second{
+    color:#737373;
+    position: absolute;
+    top:90px;
+    left: 225px;
+}
+.footer p:first-child{
+    font-size: 16px;
+}
+.footer p:last-child{
+    font-size: 12px;
+}
+
+/*导航栏*/
+.nav{
+    height: 50px;
+    background-color: #062e8d;
+}
+.nav_t{
+    height: 100%;
+}
+.nav_t li{
+    list-style: none;
+    float: left;
+}
+.nav_t a{
+    text-decoration: none;
+    display: block;
+    color:#fff;
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+    padding-right: 10px;
+
+}
