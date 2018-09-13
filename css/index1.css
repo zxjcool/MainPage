@@ -1,0 +1,170 @@
+.banner{
+    height: 800px;
+    background-color: #fff;
+    position: relative;
+}
+.all{
+    height: 300px;
+    width: 1100px;
+    padding-top: 9px;
+    /*background:-webkit-linear-gradient(top,#2262aa 1%,#fff 100%);*/
+    /*box-shadow: 0 25px 75px rgba(76,139,216,0.9) inset;*/
+}
+.screen {
+    width: 1054px;
+    height: 290px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.screen li {
+    width: 1054px;
+    height: 290px;
+    overflow: hidden;
+    float: left;
+}
+.screen ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 7000px;
+}
+.ban_left{
+    margin-left: 23px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 250px;
+    height: 480px;
+    box-shadow: 0 0 16px 1px rgba(0,0,0,.2);
+    /*background-color: pink;*/
+}
+.ban_f{
+    height: 120px;
+    width: 250px;
+    /*background: url("../images/beijing.jpg") no-repeat;*/
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+.ban_t{
+    height: 360px;
+    width: 250px;
+    background: url("../images/ditu5.png") no-repeat;
+    position: relative;
+}
+.ban_t .first{
+    position: absolute;
+    top: -5px;
+    left: -7px;
+}
+.ban_t ul{
+    padding-top: 30px;
+}
+.ban_t li{
+    display: block;
+    padding-left: 45px;
+    list-style: none;
+    height: 40px;
+    line-height: 40px;
+    width: 150px;
+    border-bottom: 1px solid #ccc;
+}
+.ban_t .ul_first{
+    background: url("../images/345.png") no-repeat 10px 6px;
+}
+.ban_t .ul_second{
+    background: url("../images/345.png") no-repeat 10px 6px;
+}
+.ban_right{
+    width: 770px;
+    height: 480px;
+    /*background-color: pink;*/
+    position: absolute;
+    top:310px;
+    right: 23px;
+}
+.ban_right ul{
+    padding-top: 10px;
+    position: relative;
+}
+.ban_right .u_first{
+    display: block;
+    padding-left: 45px;
+    list-style: none;
+    height: 40px;
+    line-height: 40px;
+    width: 150px;
+    font-weight: bold;
+    border-bottom: 4px solid #1c50a4;
+    background: url("../images/345.png") no-repeat 11px -31px;
+}
+.ban_right .u_second{
+    display: block;
+    /*padding-left: 45px;*/
+    list-style: none;
+    height: 40px;
+    line-height: 40px;
+    width: 575px;
+    font-weight: bold;
+    border-bottom: 1px solid #abaca7;
+    position: absolute;
+    top:13px;
+    right: 0;
+}
+.ban_right .u_second ul{
+    padding-top: 10px;
+    position: relative;
+}
+.ban_right .u_second li{
+    display: block;
+    font-weight: lighter;
+    font-size: 14px;
+    /*padding-left: 45px;*/
+    text-align: right;
+    list-style: none;
+    height: 39px;
+    line-height: 39px;
+    width: 575px;
+    border-bottom: 3px solid #f3f4ef;
+    position: absolute;
+    top:-2px;
+    right: 0;
+}
+.box ul {
+    list-style: none;
+}
+.box {
+    width: 600px;
+    margin: 50px auto;
+    background-color: yellowgreen;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 20px;
+}
+.box textarea {
+    width: 450px;
+    height: 160px;
+    /*border: 1px solid #ccc;*/
+    outline: none;
+    resize: none;
+}
+.box ul {
+    width: 450px;
+    padding-left: 80px;
+}
+ .box ul li {
+    line-height: 25px;
+    border-bottom: 1px dashed #ccc;
+}
+.box input {
+    float: right;
+}
+.box button{
+    width: 40px;
+    height: 20px;
+    border-radius: 3px;
+}
+
+
+

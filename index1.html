@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>地层三维建模仿真实验</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index1.css">
+</head>
+<body>
+<div class="header">
+    <div class="inner">
+        <div class="in_left">
+            <span><img src="images/123.png" alt="长安大学" title="长安大学"></span>
+            <p class="first">地层三维建模虚拟仿真实验系统</p>
+            <i>Virtual Simulation Experiment System for Formation 3D Modeling</i>
+        </div>
+        <div class="in_right">
+            <div class="search">
+                <input type="text" value="请输入关键字">
+                <button><i></i></button>
+            </div>
+            <div class="hot">
+                <ul>
+                    <li>关键词：</li>
+                    <li><a href="#">断层</a></li>
+                    <li><a href="#">三维仿真</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="top">
+            <ul>
+                <li><a href="#">电子邮件</a></li>
+                <li><a href="#">维护邮箱</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="nav">
+    <div class="nav_t w">
+        <ul>
+            <li><a href="index.html" class="current">首页</a></li>
+            <li><a href="#">实验室简介</a></li>
+            <li><a href="#">研究团队</a></li>
+            <li><a href="#">科学研究</a></li>
+            <li><a href="#">成果论著</a></li>
+            <li><a href="#">实验设备</a></li>
+            <li><a href="#">下载中心</a></li>
+            <li><a href="#">管理制度</a></li>
+            <li><a href="#">留言板</a></li>
+        </ul>
+    </div>
+</div>
+<div class="banner w">
+    <div class="all">
+        <div class="screen" id="box">
+            <ul>
+                <li><img src="images/14.png" ></li>
+                <li><img src="images/11.png" ></li>
+                <li><img src="images/12.png" ></li>
+                <li><img src="images/13.png" ></li>
+                <li><img src="images/10.png" ></li>
+                <li><img src="images/14.png" ></li>
+            </ul>
+        </div>
+    </div>
+    <!--无缝轮播图结束-->
+    <div class="ban_left">
+        <div class="ban_f">
+            <img src="images/liuyan3.png" alt="">
+        </div>
+        <div class="ban_t">
+            <img class="first" src="images/message.png" alt="">
+            <ul>
+                <li class="ul_first">在线留言</li>
+                <li class="ul_second">查看留言</li>
+            </ul>
+        </div>
+    </div>
+    <div class="ban_right">
+        <ul>
+            <li class="u_first">在线留言</li>
+            <li class="u_second">
+                <ul>
+                    <li>您现在所在的位置：首页>留言板</li>
+                </ul>
+            </li>
+        </ul>
+    <div class="box" id="weibo">
+            <span>留言发布</span>
+            <textarea name="" id="txt" cols="30" rows="10"></textarea>
+            <button id="btn">发布</button>
+            <ul id="ul"></ul>
+    </div>
+    </div>
+</div>
+<div class="footer w">
+    <div class="f_right"></div>
+    <p class="first">Copyright © 2010 All Rights Reserved. 西部矿产资源与地质工程教育部重点实验室 版权所有</p>
+    <p class="second">地址：西安市雁塔南段126号(710054) 电话：029-82339035 传真：029-82339935 E-MAIL：wmrge@chd.edu.cn</p>
+</div>
+<script src="js/common.js"></script>
+<script src="js/jquery-1.12.4.js"></script>
+<script>
+    var current = 0;
+    function f1() {
+        var ulObj = my$("box").children[0];
+        current -= 50;
+        if (current < -5270) {
+            ulObj.style.left = 0 + "px";
+            current = 0;
+        } else {
+            ulObj.style.left = current + "px";
+        }
+    }
+    var timeid = setInterval(f1, 100);
+    my$("box").onmouseover = function () {
+        //停止
+        clearInterval(timeid);
+    };
+    my$("box").onmouseout = function () {
+        //继续
+        timeid = setInterval(f1,100);
+    };
+    //无缝连接轮播图结束
+    $(function () {
+        $("#btn").click(function () {
+
+            if ($("#txt").val().trim().length == 0) {
+                return;
+            }
+            //$("#txt").val();-----就是文本框的值
+            $("<li></li>").text($("#txt").val()).prependTo("#ul");
+
+            $("#txt").val("");
+        });
+    });
+</script>
+</body>
+</html>

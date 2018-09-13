@@ -1,9 +1,11 @@
-﻿*{
+*{
     padding: 0;
     margin: 0;
+    border:0;
 }
 body{
-    background-color: #d4d0c8;
+    background-color: #f3f5f7;
+    /*height: 1000px;*/
 }
 input,button{
     padding: 0;
@@ -20,8 +22,11 @@ input,button{
     font-style: normal;
 }
 .header{
-    height: 171px;
-    background-color: #022066;
+    height: 170px;
+    /*background-color: #022066;*/
+            background:-webkit-linear-gradient(top,#022066 60%,#2262aa 100%);
+    /*background-color: pink;*/
+    /*background:-webkit-linear-gradient(渐变的起始位置， 起始颜色， 结束颜色)；*/
 }
 .inner{
     height: 170px;
@@ -47,7 +52,6 @@ input,button{
     font-size: 36px;
     font-weight: 400;
     color: #fff;
-
 }
 .in_left i{
     position:absolute;
@@ -82,7 +86,6 @@ input,button{
     position: absolute;
     top:3px;
     left: 52px;
-
 }
 .top a {
     text-decoration: none;
@@ -174,11 +177,12 @@ input,button{
 .footer p:last-child{
     font-size: 12px;
 }
-
 /*导航栏*/
 .nav{
     height: 50px;
     background-color: #062e8d;
+    box-shadow: 0 25px 75px rgba(76,139,216,0.9);
+    /*box-shadow: 10px 0 10px 30px #d4d0c8;*/
 }
 .nav_t{
     height: 100%;
@@ -194,6 +198,24 @@ input,button{
     font-size: 20px;
     height: 50px;
     line-height: 50px;
-    padding-right: 10px;
-
+    padding: 0 23px;
 }
+.nav_t a:last-child{
+    padding: 0 23px;
+}
+.nav_t .current{
+    color:yellow;
+}
+.nav_t a:hover{
+    /*background-color: #053066;*/
+    color: yellow;
+}
+
+
+
+
+
+
+
+
+
